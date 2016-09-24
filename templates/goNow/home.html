@@ -10,16 +10,16 @@
                 <hr>
                 <form method="POST" class="search-form">{% csrf_token %}
 
-                    {{ from.trip_location.label_tag }}
+                    <label for="{{ form.trip_loaction.id_for_label }}">Where..</label>
                     {{ form.trip_location }}
 
-                    {{ from.trip_start_date.label_tag }}
+                    <label for="{{ form.trip_start_date.id_for_label }}">When..</label>
                     {{ form.trip_start_date }}
 
-                    {{ from.trip_budget.label_tag }}
+                    <label for="{{ form.subject.id_for_label }}">Budget..</label>
                     {{ form.trip_budget }}
 
-                    {{ from.distance_from_you.label_tag }}
+                    <label for="{{ form.distance_from_you.id_for_label }}">Area Range..</label>
                     {{ form.distance_from_you }}
                    
                      <button type="submit" class="submitSearch btn btn-default btn-xs">Search</button>

@@ -2,13 +2,13 @@
 {% extends 'goNow/base.html' %}
 {% load static %}
 {% block content %}
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+           <hr>
+            <h1>  &nbsp;Welcome to goNow</h1>
                 <hr>
-                <h1>  &nbsp;Welcome to goNow</h1>
-                <hr>
-                <form method="POST" class="search-form">{% csrf_token %}
+                    <form method="POST" class="search-form">{% csrf_token %}
                     <!-- Location -->
                     {{ form.trip_location }}
                     
@@ -24,11 +24,21 @@
                      <button type="submit" class="submitSearch btn btn-default btn-xs">Search</button>
                  </form>
                <!-- <a href="#about" class="btn btn-primary btn-xl page-scroll">Download</a> -->
-            </div>
-            <div class="special-content">
+        </div>
+    </div>
+    <div class="</row>">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4 col-lg-offset-4">
+            <h2> Coming Soon.. </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4"></div>
+
+        <div class="col-lg-4 col-lg-offset-4">
             <img src="{% static 'goNow/images/ios.png' %}" width="130px" height="40px">
             <img src="{% static 'goNow/images/google.png' %}"width="130px" height="40px">
-            </div>
         </div>
-    </header>
+    </div>
+</header>
 {% endblock %}

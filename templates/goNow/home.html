@@ -9,22 +9,19 @@
                 <h1>  &nbsp;Welcome to goNow</h1>
                 <hr>
                 <form method="POST" class="search-form">{% csrf_token %}
-                    <div style="float:left;margin-right:20px;">
+
                     {{ from.trip_location.label_tag}}
                     {{ form.trip_location }}
-                    </div>
-                    <div style="float:left;margin-right:20px;">
+
                     {{ from.trip_start_date.label_tag}}
                     {{ form.trip_start_date }}
-                    </div>
-                    <div style="float:left;margin-right:20px;">
+
                     {{ from.trip_budget.label_tag}}
                     {{ form.trip_budget }}
-                    </div>
-                    <div style="float:left;margin-right:20px;">
+
                     {{ from.distance_from_you.label_tag}}
                     {{ form.distance_from_you }}
-                    </div>
+                   
                      <button type="submit" class="submitSearch btn btn-default btn-xs">Search</button>
                  </form>
                <!-- <a href="#about" class="btn btn-primary btn-xl page-scroll">Download</a> -->

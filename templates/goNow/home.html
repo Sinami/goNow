@@ -8,7 +8,10 @@
                 <hr>
                 <h1>  &nbsp;Welcome to goNow</h1>
                 <hr>
-                <p>{{ form.as_p }}</p>
+                <form method="POST" class="search-form">{% csrf_token %}
+                    {{ form.trip_location }}
+                     <button type="submit" class="submitSearch btn btn-default">Search</button>
+                 </form>
                <!-- <a href="#about" class="btn btn-primary btn-xl page-scroll">Download</a> -->
             </div>
             <div class="special-content">

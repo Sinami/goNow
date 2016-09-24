@@ -9,8 +9,11 @@
                 <h1>  &nbsp;Welcome to goNow</h1>
                 <hr>
                 <form method="POST" class="search-form">{% csrf_token %}
+                    <div style="float:left;margin-right:20px;">
+                    {{ from.trip_location.label_tag}}
                     {{ form.trip_location }}
-                     <button type="submit" class="submitSearch btn btn-default">Search</button>
+                    <div>
+                     <button type="submit" class="submitSearch btn btn-default btn-xs">Search</button>
                  </form>
                <!-- <a href="#about" class="btn btn-primary btn-xl page-scroll">Download</a> -->
             </div>

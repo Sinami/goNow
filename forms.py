@@ -12,7 +12,7 @@ class TripSearchForm(forms.ModelForm):
     trip_start_date = forms.DateField(label='When..')
     #trip_end_date = forms.DateField()
     trip_budget = forms.IntegerField(label='Budget..')
-    distance_from_you = forms.ModelFormOptions(label='Area Range..')
+    distance_from_you = forms.IntegerField(label='Area Range..')
     #class Meta:
     #    model = Trip
     #   fields = ('trip_location','trip_start_date','trip_end_date',)

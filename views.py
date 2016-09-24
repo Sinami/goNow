@@ -35,3 +35,7 @@ def index(request):
 	else:
 		form = TripSearchForm()
 	return render(request, 'groupTracker/index.html', {'form':form,})
+
+def submitSearch(request, pk):
+	post = get_object_or_404(Trip, pk=pk)
+	return render(request, 'goNow/results.html', {'post':post})

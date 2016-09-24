@@ -1,6 +1,6 @@
 from django.db import models
 
-class UserProfile(models.model):
+class UserProfile(models.Model):
     user_id = models.IntegerField(primary_key=True)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
@@ -12,7 +12,7 @@ class UserProfile(models.model):
         return (self.user_id + " " + self.first_name + " | " + self.last_name + " | " + self.age + " | " + self.city + ", " + self.state)
 
 
-class Trip(models.model):
+class Trip(models.Model):
     trip_id = models.IntegerField(primary_key=True)
     user_id = models.IntegerField(unique=True)
     trip_location = models.CharField(max_length=200)

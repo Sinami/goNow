@@ -34,7 +34,7 @@ def index(request):
 		# 		return redirect('groupTracker:details', records)
 	else:
 		form = TripSearchForm()
-	return render(request, 'goNow/index.html', {'form':form,})
+	return render(request, 'goNow/home.html', {'form':form,})
 
 def submitSearch(request, pk):
 	post = get_object_or_404(Trip, pk=pk)

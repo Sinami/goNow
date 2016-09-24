@@ -19,7 +19,7 @@ class Trip(models.Model):
     trip_budget = models.IntegerField()
     trip_start_date = models.CharField(max_length=50)
     trip_end_date = models.CharField(max_length=50)
-    distance_from_you = models.IntegerFIeld()
+    distance_from_you = models.IntegerField()
 
     def __str__(self):
         return (self.trip_id + " " + self.user_id + " | " + self.trip_location + " | " + self.trip_start_date + " | " + self.trip_end_date)

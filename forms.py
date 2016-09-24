@@ -7,7 +7,7 @@ class UserInfoForm(forms.ModelForm):
         model = UserProfile
         fields = ('first_name', 'last_name', 'age', 'city', 'state',)
 
-class TripSearchForm(forms.ModelForm):
+class TripSearchForm(forms.Form):
     trip_location = forms.CharField(label='Where..',max_length=200)
     trip_start_date = forms.DateField(label='When..')
     #trip_end_date = forms.DateField()

@@ -9,17 +9,16 @@
                 <h1>  &nbsp;Welcome to goNow</h1>
                 <hr>
                 <form method="POST" class="search-form">{% csrf_token %}
-
-                    <label for="{{ form.trip_loaction.id_for_label }}">Where..</label>
+                    <!-- Location -->
                     {{ form.trip_location }}
-
-                    <label for="{{ form.trip_start_date.id_for_label }}">When..</label>
+                    
+                    <!-- When -->
                     {{ form.trip_start_date }}
-
-                    <label for="{{ form.subject.id_for_label }}">Budget..</label>
+                    
+                    <!-- Budget -->
                     {{ form.trip_budget }}
 
-                    <label for="{{ form.distance_from_you.id_for_label }}">Area Range..</label>
+                    <!-- Area around user. -->
                     {{ form.distance_from_you }}
                    
                      <button type="submit" class="submitSearch btn btn-default btn-xs">Search</button>

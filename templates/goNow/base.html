@@ -127,7 +127,7 @@ FB.getLoginStatus(function(response) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Welcome to goNow
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="{% static 'goNow/images/go-now-logo.png' %}">
                 </a>
             </div>
 
@@ -135,16 +135,16 @@ FB.getLoginStatus(function(response) {
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+                        <!--<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
                         </fb:login-button>
                         <div id="status">
-                        </div>
+                        </div>-->
                     </li>
                     <li>
-                        <a href="#" class="page-scroll" role="button" data-toggle="modal" data-target="#login-modal">Sign Up</a>
+                        <a href="#signup" class="page-scroll" role="button" data-toggle="modal" data-target="#login-modal">Sign Up</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#login">Login</a>
+                        <a href="#login" class="page-scroll" role="button" data-toggle="modal" data-target="#login-modal">Login</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>

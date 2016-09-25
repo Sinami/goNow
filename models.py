@@ -23,3 +23,11 @@ class Trip(models.Model):
 
     def __str__(self):
         return (self.trip_id + " " + self.user_id + " | " + self.trip_location + " | " + self.trip_start_date + " | " + self.trip_end_date)
+
+
+#######
+#trip_location = form.cleaned_data['trip_location']
+#				trip_start_date = form.cleaned_data['trip_start_date']
+#				trip_budget = form.cleaned_data['trip_budget']
+#				distance_from_you = form.cleaned_data['distance_from_you']
+#				TripSearchForm.objects.filter()

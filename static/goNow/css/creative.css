@@ -454,6 +454,11 @@ fieldset[disabled] .btn-primary.active {
     margin-top: -17px;
 }
 
+.logo-main {
+    margin-bottom: -15px;
+    margin-left:-15px;
+}
+
 ::-moz-selection {
     text-shadow: none;
     color: #fff;

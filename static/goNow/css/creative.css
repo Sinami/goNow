@@ -448,6 +448,12 @@ fieldset[disabled] .btn-primary.active {
     padding: 15px 30px;
 }
 
+.logo {
+    width: 75px;
+    height: 58.06px;
+    padding-top: -15px;
+}
+
 ::-moz-selection {
     text-shadow: none;
     color: #fff;

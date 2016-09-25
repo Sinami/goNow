@@ -8,7 +8,7 @@
            <hr>
             <img class="logo-main" src="{% static 'goNow/images/go-now-logo.png' %}">
                 <hr>
-                    <form method="POST" class="search-form">{% csrf_token %}
+                    <form method="POST" class="search-form" hidden="true">{% csrf_token %}
                     <!-- Location -->
                     {{ form.trip_location }}
                     
@@ -21,7 +21,7 @@
                     <!-- Area around user. -->
                     {{ form.distance_from_you }}
                    
-                     <button type="submit" class="submitSearch btn btn-default btn-xs">Search</button>
+                     <button type="submit" name="submitSearch" class="submitSearch btn btn-default btn-xs">Search</button>
                  </form>
                <!-- <a href="#about" class="btn btn-primary btn-xl page-scroll">Download</a> -->
 <section>

@@ -35,6 +35,8 @@ def index(request):
 		# 		c_name = searchStr.cleaned_data['class_name']
 		# 		records = GroupInfo.objects.filter(class_name=c_name)
 		# 		return redirect('groupTracker:details', records)
+		elif 'subscribe' in request.POST:
+			return render(request, 'goNow/subscribe.html',)
 	else:
 		form = TripSearchForm()
 		return render(request, 'goNow/home.html', {'form':form,})

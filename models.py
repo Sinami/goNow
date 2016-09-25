@@ -24,6 +24,12 @@ class Trip(models.Model):
     def __str__(self):
         return (self.trip_id + " " + self.user_id + " | " + self.trip_location + " | " + self.trip_start_date + " | " + self.trip_end_date)
 
+class Subscribe(models.Model):
+	name = models.CharField(max_length=200)
+	email = models.EmailField(max_length=200)
+	
+	def __str__(self):
+		return (self.name + " | " + self.email)
 
 #######
 #trip_location = form.cleaned_data['trip_location']

@@ -451,7 +451,7 @@ fieldset[disabled] .btn-primary.active {
 .logo {
     width: 75px;
     height: 58.06px;
-    padding-top: -15px;
+    margin-top: -17px;
 }
 
 ::-moz-selection {

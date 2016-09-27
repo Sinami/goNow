@@ -1,5 +1,5 @@
 from django import forms
-from .models import UserProfile, Trip
+from .models import UserProfile, Trip, Subscribe
 
 class UserInfoForm(forms.ModelForm):
 
@@ -16,3 +16,7 @@ class TripSearchForm(forms.Form):
     #class Meta:
     #    model = Trip
     #   fields = ('trip_location','trip_start_date','trip_end_date',)
+    
+class SubscribeForm(forms.Form):
+    name = forms.CharField(max_length=200)
+    email = forms.EmailField(max_length=200)

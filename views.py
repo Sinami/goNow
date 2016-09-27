@@ -4,8 +4,8 @@ from django.http import HttpResponse
 import logging
 logger = logging.getLogger(__name__)
 
-from .forms import TripSearchForm, UserInfoForm
-from .models import UserProfile, Trip
+from .forms import TripSearchForm, UserInfoForm, SubscribeForm
+from .models import UserProfile, Trip, Subscribe
 
 
 def index(request):
@@ -36,6 +36,9 @@ def index(request):
 		# 		records = GroupInfo.objects.filter(class_name=c_name)
 		# 		return redirect('groupTracker:details', records)
 		elif 'subscribe' in request.POST:
+			#data = {'name':
+			#}
+			
 			return render(request, 'goNow/subscribe.html',)
 	else:
 		form = TripSearchForm()
